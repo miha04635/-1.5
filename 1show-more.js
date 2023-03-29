@@ -5,7 +5,6 @@ const bthclosed = document.querySelector('.more__button--closed');
 const icon = document.querySelector('.icon');
 
 bthOpen.addEventListener('click', () => {
-    console.log(container)
 	icon.classList.add('icon__content');
 	container.classList.add('container__height');
 	bthOpen.style.display = 'none';
