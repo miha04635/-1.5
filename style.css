@@ -79,6 +79,10 @@ body {
 }
 
 @media (min-width: 768px) {
+  .more__button {
+    font-family: "TT Lakes";
+  }
+
   .more__button--closed {
     display: none;
   }
