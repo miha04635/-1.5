@@ -1,7 +1,12 @@
 const screenWidth = window.screen.width;
 const screenHeight = window.screen.height;
 
-if (window.matchMedia("(min-width: 400px)").matches) {
+
+let mql = window.matchMedia('(max-width: 767px)');
+
+window.addEventListener('resize', () => {
+
+
 let swiper = new Swiper(".mySwiper", {
     slidesPerView: "auto",
     spaceBetween: 30,
@@ -10,4 +15,4 @@ let swiper = new Swiper(".mySwiper", {
       clickable: true,
     },
   });
-}
+})
