@@ -17,6 +17,7 @@ body {
 
 h1 {
   margin: 0;
+  text-decoration: none;
 }
 
 .swiper-slide {
@@ -81,6 +82,12 @@ h1 {
 }
 
 @media (min-width: 768px) {
+  .swiper-wrapper {
+    width: auto;
+  }
+  .swiper-slide-active {
+    margin: 0;
+  }
   .more__button {
     font-family: "TT Lakes";
     font-size: 16px;
@@ -99,9 +106,6 @@ h1 {
     height: auto;
     overflow: hidden;
   }
-  /* .more__button--text {
-    content: 'Скрыть';
-  } */
   .header {
     margin: 0;
     margin-bottom: 24px;
@@ -111,21 +115,15 @@ h1 {
     margin: 0;
   }
   .swiper-wrapper {
-    margin: 0 24px 24px 24px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 24px;
     overflow: hidden;
     padding: 0;
-    /* margin: 0 24px 24px 24px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 24px;
-    overflow: hidden;
-    padding: 0; */
   }
 
   .swiper-slide {
+    padding: 0;
     width: 224px;
     margin: 0;
   }
@@ -161,12 +159,6 @@ h1 {
   .header {
       padding: 16px 0 16px 32px;
   }
-  .swiper-wrapper {
-      margin: 0 33px 24px 32px;
-  }
-  /* .more {
-      margin-left: 32px;
-  } */
   .swiper-slide {
       width: 240px;
   }
