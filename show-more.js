@@ -7,7 +7,6 @@ const icon = document.querySelector('.icon');
 bthOpen.addEventListener('click', () => {
 	icon.classList.add('icon__content');
 	container.classList.add('container__height');
-	bthclosed.style.display = 'block'
 	bthOpen.textContent = 'Скрыть';
 });
 
