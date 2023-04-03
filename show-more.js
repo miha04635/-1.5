@@ -4,22 +4,25 @@ const bthOpen = document.querySelector('.more__button');
 
 const icon = document.querySelector('.icon');
 
-
-if (bthOpen === 'Показать все') {
-
 	bthOpen.addEventListener('click', () => {
 	icon.classList.add('icon__content');
+	console.log('1');
 	container.classList.add('container__height');
+	bthOpen.classList.add('more__button--closed');
+	bthOpen.classList.remove('more__button--open');
 	bthOpen.textContent = 'Скрыть';
 });
 
-}
-
 if (bthOpen === 'Скрыть') {
 
-	bthOpen.addEventListener('click', () => {
+bthOpen.addEventListener('click', () => {
+	console.log('2');
 	icon.classList.remove('icon__content');
 	container.classList.remove('container__height');
-	bthOpen.textContent = 'Показать все';
-	});
+	bthOpen.classList.remove('more__button--closed');
+	bthOpen.classList.add('more__button--open');
+	bthOpen.textContent = 'Показать всё';
+});
 }
+
+
