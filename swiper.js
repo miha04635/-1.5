@@ -1,7 +1,3 @@
-const screenWidth = window.screen.width;
-const screenHeight = window.screen.height;
-
-
 let mql = window.matchMedia('(max-width: 767px)');
 
 window.addEventListener('resize', () => {
