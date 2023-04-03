@@ -23,16 +23,3 @@ if (bthOpen === 'Скрыть') {
 	bthOpen.textContent = 'Показать все';
 	});
 }
-
-// bthclosed.addEventListener('click', () => {
-// 	container.classList.remove('container__height');
-// 	icon.classList.remove('icon__content');
-// 	bthOpen.style.display = 'block';
-// 	bthclosed.style.display = 'none'
-
-// });
-
-
-
-
-// C:\vs\Test_one\1.5--3
