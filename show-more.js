@@ -26,7 +26,7 @@ function myFunction() {
 	let showMoreButton = document.querySelector('.more__button');
 	let icon = document.querySelector('.icon');
 
-	if (showMoreButton.textContent === 'Показать все') {
+	if (showMoreButton.textContent === 'Показать всё') {
 	showMoreButton.addEventListener('click', () => {
 		icon.classList.add('icon__content');
 		container.classList.add('container__height');
