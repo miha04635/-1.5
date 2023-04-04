@@ -1,28 +1,44 @@
-const container = document.querySelector('.swiper');
-const showMore = document.querySelector('.more');
-const bthOpen = document.querySelector('.more__button');
+// const container = document.querySelector('.swiper');
+// const showMore = document.querySelector('.more');
+// const showMoreButton = document.querySelector('.more__button');
 
-const icon = document.querySelector('.icon');
+// const icon = document.querySelector('.icon');
 
-	bthOpen.addEventListener('click', () => {
-	icon.classList.add('icon__content');
-	console.log('1');
-	container.classList.add('container__height');
-	bthOpen.classList.add('more__button--closed');
-	bthOpen.classList.remove('more__button--open');
-	bthOpen.textContent = 'Скрыть';
-});
+// showMoreButton.addEventListener('click', () => {
+	
+// 	icon.classList.add('icon__content');
+// 	container.classList.add('container__height');
+// 	showMoreButton.textContent = 'Скрыть';
+// });
 
-if (bthOpen === 'Скрыть') {
+// if ( showMoreButton.textContent === 'Cкрыть') {
+// 	console.log('1')
+// 	showMoreButton.addEventListener('click', () => {
+// 	icon.classList.remove('icon__content');
+// 	container.classList.remove('container__height');
+// 	showMoreButton.textContent = 'Показать всё';
+// });
+// }
 
-bthOpen.addEventListener('click', () => {
-	console.log('2');
-	icon.classList.remove('icon__content');
-	container.classList.remove('container__height');
-	bthOpen.classList.remove('more__button--closed');
-	bthOpen.classList.add('more__button--open');
-	bthOpen.textContent = 'Показать всё';
-});
+
+function myFunction() {
+	let container = document.querySelector('.swiper');
+	let showMoreButton = document.querySelector('.more__button');
+	let icon = document.querySelector('.icon');
+
+	if (showMoreButton.textContent === 'Показать все') {
+	showMoreButton.addEventListener('click', () => {
+		icon.classList.add('icon__content');
+		container.classList.add('container__height');
+		showMoreButton.textContent = 'Скрыть';
+		});
+	} else if (showMoreButton.textContent === 'Скрыть') {
+	showMoreButton.addEventListener('click', () => {
+		icon.classList.remove('icon__content');
+		container.classList.remove('container__height');
+		showMoreButton.textContent = 'Показать всё';
+	});
+	}
+
 }
-
 
