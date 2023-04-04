@@ -1,8 +1,6 @@
-let mql = window.matchMedia('(max-width: 767px)');
 
-window.addEventListener('resize', () => {
-  
-let swiper = new Swiper(".mySwiper", {
+if (window.matchMedia("(max-width: 700px)").matches) {
+  let swiper = new Swiper(".mySwiper", {
     slidesPerView: "auto",
     spaceBetween: 30,
     pagination: {
@@ -10,4 +8,5 @@ let swiper = new Swiper(".mySwiper", {
       clickable: true,
     },
   });
-})
+}
+

@@ -96,13 +96,12 @@ h1 {
     font-weight: 500;
     
   }
-
   .more__button--closed {
     display: none;
   }
   .swiper {
     overflow: hidden;
-    height: 252px;
+    height: 260px;
     margin-right: 24px;
   }
   .container__height {
@@ -124,7 +123,6 @@ h1 {
     overflow: hidden;
     padding: 0;
   }
-
   .swiper-slide {
     padding: 0;
     width: 224px;
@@ -172,5 +170,6 @@ h1 {
       gap: 32px;
       grid-template-columns: 1fr 1fr 1fr 1fr;
   }
+
 
 }
