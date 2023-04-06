@@ -1,21 +1,37 @@
-function myFunction() {
-	let container = document.querySelector('.swiper');
-	let showMoreButton = document.querySelector('.more__button');
-	let icon = document.querySelector('.icon');
+document.addEventListener("DOMContentLoaded", function(event) {
+	const container = document.querySelector('.brands');
+	const showMoreButton = document.querySelector('.brands__show-more--bth');
+	const icon = document.querySelector('.icon');
 
-	if (showMoreButton.textContent === 'Показать всё') {
-	showMoreButton.addEventListener('click', () => {
-		icon.classList.add('icon__content');
-		container.classList.add('container__height');
-		showMoreButton.textContent = 'Скрыть';
+	if (window.matchMedia("(max-width: 700px)").matches) {
+		let swiper = new Swiper(".mySwiper", {
+		  slidesPerView: "auto",
+		  spaceBetween: 30,
+		  pagination: {
+			el: ".swiper-pagination",
+			clickable: true,
+		  },
 		});
-	} else if (showMoreButton.textContent === 'Скрыть') {
-	showMoreButton.addEventListener('click', () => {
-		icon.classList.remove('icon__content');
-		container.classList.remove('container__height');
-		showMoreButton.textContent = 'Показать всё';
-	});
 	}
 
+
+const handleClick = (event) => {
+  if (container?.classList.contains("expanded")) {
+    showMoreButton.textContent = "Скрыть";
+	
+  } else {
+    showMoreButton.textContent = "Показать всё";
+  }
+
+};
+
+showMoreButton.addEventListener("click", handleClick);
+
+
+showMoreButton.onclick = function() {
+	icon.classList.toggle('icon__content');
+	container.classList.toggle('expanded');
 }
+
+});
 
