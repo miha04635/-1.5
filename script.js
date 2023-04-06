@@ -1,4 +1,4 @@
-
+document.addEventListener("DOMContentLoaded", function(event) {
 	const container = document.querySelector('.brands');
 	const showMoreButton = document.querySelector('.brands__show-more--bth');
 	const icon = document.querySelector('.icon');
@@ -28,9 +28,10 @@ const handleClick = (event) => {
 showMoreButton.addEventListener("click", handleClick);
 
 
-showMoreButton.onclick = function() {
-	icon.classList.toggle('icon__content');
-	container.classList.toggle('expanded');
-}
+// showMoreButton.onclick = function() {
+// 	icon.classList.toggle('icon__content');
+// 	container.classList.toggle('expanded');
+// }
 
+});
 
