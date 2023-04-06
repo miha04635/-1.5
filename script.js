@@ -17,11 +17,11 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 const handleClick = (event) => {
   if (container?.classList.contains("expanded")) {
-    showMoreButton.textContent = "Скрыть";
+    showMoreButton.textContent = "Показать всё";
 	
   } else {
     
-	showMoreButton.textContent = "Показать всё";
+	showMoreButton.textContent = "Скрыть";
   }
 
 };
